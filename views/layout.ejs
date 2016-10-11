@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+
+<head>
+    <title>
+        <%=typeof title=='undefined' ? site.title:title %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <!--STYLES-->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+</head>
+
+<body>
+
+    <%- partial ( 'partials/header.ejs') %>
+
+    <%- body %>
+
+    <div class="container">
+        <hr>
+        <footer class="footer pull-right">
+            <div>
+                <div>Chat App by <a href="http://cgeekman.com" target="_blank">Hammad Rasheed</a></div>
+                <div>Copyright &copy; 2016. All Rights Reserved.</div>
+            </div>
+        </footer>
+    </div>
+
+    <!--TEMPLATES-->
+    <script type="text/javascript" src="/jst.js"></script>
+    <!--TEMPLATES END-->
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/functions.js"></script>
+    <script src="/js/services/TodoService.js"></script>
+    <!--SCRIPTS END-->
+
+
+</body>
+
+</html>

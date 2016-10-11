@@ -1,0 +1,33 @@
+<div class="container">
+   
+   <div class="row">
+       <div class="col-sm-12 text-right">
+           <a href="/todos/add" class="btn btn-raised btn-primary">Add Todo</a>
+       </div>
+   </div>
+   
+    <div class="row">
+        <div class="col-sm-12 jumbotron">
+            <div class="table-responsive">
+                <table class="table table-condensed table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Todo Note</th>
+                            <th>Created By</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr ng-repeat="todo in todos">
+                            <td>{{ todo.id }}</td>
+                            <td>{{ todo.value }}</td>
+                            <td>Some User</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</div>
